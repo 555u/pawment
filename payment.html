@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity & OSINT Service Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        p, input {
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .signature {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+    <script>
+        function signAgreement() {
+            let clientName = document.getElementById("clientName").value.trim();
+            if (clientName === "") {
+                alert("Please enter your name before signing.");
+                return;
+            }
+            alert("Agreement Signed Successfully by " + clientName);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cybersecurity & OSINT Service Agreement</h1>
+        <p><strong>Client:</strong> <input type="text" id="clientName" placeholder="Enter your name"></p>
+        <p><strong>Provider:</strong> Rashed Humaid Mohammed Rasheed AlBlooshi</p>
+
+        <h2>1. Services</h2>
+        <p>The Provider agrees to perform cybersecurity, OSINT investigations, and penetration testing as requested by the Client.</p>
+
+        <h2>2. Payment</h2>
+        <p><strong>Fee:</strong> <input type="text" placeholder="Enter amount"> AED/USD</p>
+        <p><strong>Due Date:</strong> <input type="date"></p>
+        <p><strong>Method:</strong> <input type="text" placeholder="Payment method"></p>
+
+        <h2>3. Liability Waiver</h2>
+        <p>The Provider is not responsible for any data loss, system failures, security breaches, or reputational consequences.</p>
+
+        <h2>4. Authorization</h2>
+        <p>The Client confirms ownership of all systems involved and takes full responsibility.</p>
+
+        <h2>5. Confidentiality</h2>
+        <p>All exchanged or uncovered information remains confidential.</p>
+
+        <h2>6. Legal</h2>
+        <p>Governed by UAE law. Disputes resolved via arbitration.</p>
+
+        <div class="signature">
+            <p><strong>Client Signature:</strong> <input type="text" placeholder="Sign here"></p>
+            <p><strong>Provider Signature:</strong> Rashed Humaid Mohammed Rasheed AlBlooshi</p>
+        </div>
+
+        <button onclick="signAgreement()">Sign Agreement</button>
+
+        <p class="footer"><strong>&copy; 2025 BlooshiSec. All Rights Reserved.</strong></p>
+    </div>
+</body>
+</html>
